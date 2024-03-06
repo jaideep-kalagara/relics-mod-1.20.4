@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "relicsmod",
+	"version": "${version}",
+	"name": "Relics Mod",
+	"description": "Relics stuff",
+	"authors": [
+		"Supergamer10920",
+		"lokojava"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/relicsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.supergamer.relicsmod.RelicsMod"
+		],
+		"client": [
+			"net.supergamer.relicsmod.ClientRelicsMod"
+		],
+		"fabric-datagen": [
+			"net.supergamer.relicsmod.RelicsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"relicsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
