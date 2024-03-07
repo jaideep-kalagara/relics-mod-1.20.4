@@ -2,6 +2,7 @@ package net.supergamer.relicsmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.supergamer.relicsmod.Items.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,6 @@ public class RelicsMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Starting mod " + MOD_ID + "...");
-
+		ModItems.registerModItems();
 	}
 }
