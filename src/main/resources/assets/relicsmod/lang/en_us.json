@@ -1,3 +1,7 @@
 {
-  "item.relicsmod.rare_relic": "Rare Relic"
+  "item.relicsmod.rare_relic": "Rare Relic",
+  "item.relicsmod.common_relic": "Common Relic",
+  "item.relicsmod.uncommon_relic": "Uncommon Relic",
+  "item.relicsmod.epic_relic": "Epic Relic",
+  "item.relicsmod.legendary_relic": "Legendary Relic"
 }

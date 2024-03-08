@@ -6,7 +6,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.util.Identifier;
+import net.supergamer.relicsmod.Items.Relics.CommonRelicItem;
 import net.supergamer.relicsmod.Items.Relics.RareRelicItem;
 import net.supergamer.relicsmod.RelicsMod;
 
@@ -15,6 +17,9 @@ public class ModItems {
 
     public static Item RARE_RELIC = registerItems(new Identifier(RelicsMod.MOD_ID, "rare_relic"),
             new RareRelicItem(new FabricItemSettings().maxDamage(1)));
+
+    public static Item COMMON_RELIC = registerItems(new Identifier(RelicsMod.MOD_ID, "common_relic"),
+            new CommonRelicItem(new FabricItemSettings().maxDamage(1)));
 
     public static Item registerItems(Identifier name, Item item) {
         return Registry.register(Registries.ITEM, name, item);
