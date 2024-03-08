@@ -19,6 +19,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.COMMON_RELIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNCOMMON_RELIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.RARE_RELIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EPIC_RELIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEGENDARY_RELIC, Models.GENERATED);
     }
 }
