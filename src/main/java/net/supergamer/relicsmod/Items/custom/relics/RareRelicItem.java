@@ -1,4 +1,4 @@
-package net.supergamer.relicsmod.Items.Relics;
+package net.supergamer.relicsmod.Items.custom.relics;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -13,8 +13,8 @@ import net.supergamer.relicsmod.util.RelicRandoms;
 
 import java.util.Random;
 
-public class UncommonRelicItem extends Item {
-    public UncommonRelicItem(Settings settings) {
+public class RareRelicItem extends Item {
+    public RareRelicItem(Settings settings) {
         super(settings);
     }
 
@@ -24,17 +24,20 @@ public class UncommonRelicItem extends Item {
 
             Random random = new Random();
 
-
             // Give bad effect to the player :(
             if (!random.nextBoolean()) {
-                RelicRandoms.giveBadStatusEffect(user, 2);
+                RelicRandoms.giveBadStatusEffect(user, 3);
             } else {
-                RelicRandoms.giveGoodStatusEffect(user, 2);
+                RelicRandoms.giveGoodStatusEffect(user, 3);
             }
 
             user.getStackInHand(hand).decrement(1);
             user.getWorld().playSound(null, user.getBlockPos(), SoundEvents.BLOCK_ANVIL_BREAK, SoundCategory.BLOCKS, 1f, 1f);
+
+
         }
+
+
         return new TypedActionResult<>(ActionResult.SUCCESS, user.getStackInHand(hand));
     }
 }

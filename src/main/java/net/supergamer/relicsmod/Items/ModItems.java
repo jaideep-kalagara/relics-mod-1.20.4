@@ -6,9 +6,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
 import net.minecraft.util.Identifier;
-import net.supergamer.relicsmod.Items.Relics.*;
+import net.supergamer.relicsmod.Items.custom.relics.*;
 import net.supergamer.relicsmod.RelicsMod;
 
 public class ModItems {
@@ -40,6 +39,8 @@ public class ModItems {
             content.add(COMMON_RELIC);
             content.add(UNCOMMON_RELIC);
             content.add(RARE_RELIC);
+            content.add(EPIC_RELIC);
+            content.add(LEGENDARY_RELIC);
         });
     }
 }

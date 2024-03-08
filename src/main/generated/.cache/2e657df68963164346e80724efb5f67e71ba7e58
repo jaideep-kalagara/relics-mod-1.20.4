@@ -1,3 +1,6 @@
-// 1.20.4	2024-03-07T20:07:06.6820946	Relics Mod/Model Definitions
+// 1.20.4	2024-03-07T20:23:36.942215	Relics Mod/Model Definitions
+482c00ea3b37ea27f565f39b13adf347c737c565 assets\relicsmod\models\item\uncommon_relic.json
+e452d6b349d855c074a4a06433104b99a9b745ba assets\relicsmod\models\item\epic_relic.json
 ce414634f97e4d428bb6e1f51a1b937da13bede6 assets\relicsmod\models\item\common_relic.json
+928dd57c2fbd5d55b7b000de98f6358378f5f995 assets\relicsmod\models\item\legendary_relic.json
 42d79f66a30c44fe2a4e07ea0b114369a0972655 assets\relicsmod\models\item\rare_relic.json
